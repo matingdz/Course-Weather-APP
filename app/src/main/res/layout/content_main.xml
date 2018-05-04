@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+   <EditText
+       android:id="@+id/city_name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+       android:hint="Please Enter City Name"/>
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_name"
+        android:text="Search"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@android:color/white" />
+
+
+
+
+ <RelativeLayout
+     android:id="@+id/forcast_relative_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/relative_layout_height"
+     android:layout_margin="@dimen/relative_layout_margin"
+     android:layout_below="@id/search_btn">
+
+  <TextView
+      android:id="@+id/city_forcast"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_size"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="8dp" />
+
+
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/humidity_relative_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/relative_layout_height"
+     android:layout_margin="@dimen/relative_layout_margin"
+     android:layout_below="@id/forcast_relative_layout">
+
+  <TextView
+      android:id="@+id/city_humidity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_size"
+
+      android:layout_centerHorizontal="true"
+      android:layout_margin="8dp" />
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/min_temp_relative_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/relative_layout_height"
+     android:layout_margin="@dimen/relative_layout_margin"
+     android:layout_below="@id/humidity_relative_layout">
+  <TextView
+      android:id="@+id/min_temp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_size"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="8dp"
+      />
+
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/max_temp_relative_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/relative_layout_height"
+     android:layout_margin="@dimen/relative_layout_margin"
+     android:layout_below="@id/min_temp_relative_layout">
+
+  <TextView
+      android:id="@+id/max_temp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_size"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="8dp"
+      />
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/wind_speed_relative_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/relative_layout_height"
+     android:layout_margin="@dimen/relative_layout_margin"
+     android:layout_below="@id/max_temp_relative_layout">
+
+  <TextView
+      android:id="@+id/wind_speed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_size"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="8dp"
+      />
+ </RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/wind_degree_relative_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/relative_layout_height"
+     android:layout_margin="@dimen/relative_layout_margin"
+     android:layout_below="@id/wind_speed_relative_layout">
+
+  <TextView
+      android:id="@+id/wind_degree"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_size"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="8dp"
+      />
+ </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
